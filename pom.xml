@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.mortar</groupId>
+	<artifactId>extjs-ux</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>A custom project using myfaces</name>
+	<url>http://www.myorganization.org</url>
+
+	<build>
+		<finalName>extjs-ux</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/js</directory>
+				<!-- true or false depending on your taste :-) -->
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+	</build>
+
+	<!-- Project dependencies -->
+	<dependencies>
+	</dependencies>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<!-- Use maven-jstools-plugin for your reports! -->
+				<groupId>gr.abiss.mvn.plugins</groupId>
+				<artifactId>maven-jstools-plugin</artifactId>
+				<version>0.1</version>
+				<configuration>
+					<jsDir>src/main/js</jsDir>
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>jslint</report>
+							<report>jsdoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>
