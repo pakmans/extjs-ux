@@ -1,4 +1,7 @@
 /**
+ * 
+ * Requires Ext.ux.util.ObjectUtils.flatten
+ * 
  * @class Ext.ux.form.Action.DWRLoad
  * @extends Ext.form.Action
  * Load data from DWR function
@@ -96,7 +99,7 @@ Ext.extend(Ext.ux.form.Action.DWRLoad, Ext.form.Action, {
 			};
 			return this.result;
 		}
-		flatData = Ext.ux.ObjUtil.flatten(response.data);
+		flatData = Ext.ux.util.ObjectUtils.flatten(response.data);
 		this.result = Ext.applyIf({
 			data: flatData
 		}, response);
