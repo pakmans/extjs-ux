@@ -1,0 +1,11 @@
+ExtJS User Extensions
+--------------------
+
+A collection of extensions for the excellent rich internet application library
+ExtJS (http://www.sencha.com/).
+These are extensions that I have found
+in the forums and that I have used in previous projects.  The idea is to have
+a centralized and controlled repository to host these extensions.
+I am NOT the author of these extensions, I have just compiled them here and
+sometimes modified them in order to suit my needs.  I also clean up the code
+with the help of JSLint.
